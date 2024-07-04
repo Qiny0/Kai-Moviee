@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Step 1: Import the font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kh+Dangrek&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kh Dangrek', sans-serif; /* Apply Kh Dangrek Regular */
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #000; /* Text color */
+        }
+        .header {
+            background-color: #000; /* Header background color */
+            color: #fff; /* Header text color */
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure it's above other content */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Add shadow */
+        }
+        .header .logo {
+            flex: 1; /* Takes up remaining space */
+            text-align: left;
+        }
+        .header .logo img {
+            max-height: 40px; /* Adjust logo height as needed */
+            border-radius: 50%; /* Make logo circular */
+        }
+        .header .sponsors-button {
+            padding: 10px 20px;
+            background-color: #fff; /* Button background color */
+            color: #000; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .header .sponsors-button:hover {
+            background-color: #ccc; /* Darken slightly on hover */
+        }
+
+        .container {
+            max-width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card .content {
+            padding: 15px;
+            background-color: #f9f9f9;
+            text-align: center; /* Center text and button */
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .watch-now-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; /* Adjust margin as needed */
+        }
+
+        .watch-now-button:hover {
+            background-color: #333; /* Darken slightly on hover */
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .card .content {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+
+            .watch-now-button {
+                padding: 8px 16px; /* Adjust padding for smaller screens */
+                font-size: 0.9rem; /* Reduce font size for smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Public/logo.jpeg" alt="Website Logo">
+        </div>
+        <a href="sponsors" class="sponsors-button">Support</a>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="Public/thumbnail.jpeg" alt="Video Thumbnail">
+            <div class="content">
+                <h2>វីណាខ្មោចតៃហោង7ថ្ងៃ</h2>
+                <p>រឿងវីណាជាខ្សែភាពយន្តមួយដែលដកស្រង់ចេញពីរឿងពិតមកពីប្រទេសឥណ្ឌូនេស៊ី😱ដែលនារីម្នាក់បានស្លាប់ហើយចូលខ្លួនមនុស្សម្នាក់ទៀតដើម្បីដោះស្រាយហេតុការណ៏និងរកយុត្តិធម៏អោយខ្លួនឯង😱</p>
+                <a class="watch-now-button" href="vina-kh.mp4">Watch Now</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="Public/coming.gif" alt="Video Thumbnail">
+            <div class="content">
+                <h2>Coming Soon</h2>
+                <p>អ្នកទាំងអស់គ្នាអាចស្នេីរឿងថ្មីតាមរយះ button ខាងក្រោមបាន</p>
+                <a class="watch-now-button" href="https://t.me/Zy_Here">ស្នេីរឿង</a>
+            </div>
+        </div>
+
+        <!-- Additional cards for more videos -->
+
+    </div>
+</body>
+</html>
